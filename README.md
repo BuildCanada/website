@@ -1,47 +1,58 @@
-# OpenNext Starter
+# Website
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Build Canada public website. Next.js on Cloudflare Workers via OpenNext.
 
-## Getting Started
+## Architecture
 
-Read the documentation at https://opennext.js.org/cloudflare.
+Two Cloudflare Workers running from the same repo:
 
-## Develop
+| Worker | Entry Point | Purpose |
+|--------|-------------|---------|
+| `website` | `custom-worker.ts` | Next.js app (HTTP only) |
+| `website-worker` | `worker/index.ts` | Queue consumer + cron triggers |
 
-Run the Next.js development server:
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or similar package manager command
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-## Preview
-
-Preview the application locally on the Cloudflare runtime:
-
+Optionally start the queue worker (for testing queue behavior):
 ```bash
-npm run preview
-# or similar package manager command
+npm run worker:dev
 ```
+
+Requires `.dev.vars` with `DATABASE_URL`.
 
 ## Deploy
 
-Deploy the application to Cloudflare:
+**CI (Cloudflare Workers Builds)** deploys the Next.js app automatically on push:
+- Build command: `npm ci && npm run build:prod`
+- Deploy command: `npm run deploy:app`
 
+**Queue worker** is deployed separately:
 ```bash
-npm run deploy
-# or similar package manager command
+npm run deploy:worker
 ```
 
-## Learn More
+**Both at once** (local only):
+```bash
+npm run deploy:all
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Secrets
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Required on both workers:
+```bash
+npx wrangler secret put DATABASE_URL
+npx wrangler secret put DATABASE_URL --config worker/wrangler.jsonc
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Cron Schedules
+
+| Schedule | Job |
+|----------|-----|
+| `0 * * * *` | Hourly job |

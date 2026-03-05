@@ -1,0 +1,48 @@
+{
+  // Standalone worker for queue consumers and cron triggers.
+  // The Next.js app runs separately via `next dev`.
+  "name": "website-worker",
+  "account_id": "af43b5869a980d4edc6c18f15cd7aa2d",
+  "main": "index.ts",
+  "compatibility_date": "2025-01-15",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "r2_buckets": [
+    {
+      "binding": "R2_PUBLIC",
+      "bucket_name": "buildcanada-prod-website"
+    },
+    {
+      "binding": "R2_PRIVATE",
+      "bucket_name": "buildcanada-prod-website-private"
+    }
+  ],
+
+  "queues": {
+    "producers": [
+      {
+        "binding": "NOTIFICATIONS_QUEUE",
+        "queue": "website-notifications"
+      }
+    ],
+    "consumers": [
+      {
+        "queue": "website-notifications",
+        "max_batch_size": 10,
+        "max_retries": 3
+      }
+    ]
+  },
+
+  "browser": {
+    "binding": "BROWSER"
+  },
+
+  "triggers": {
+    "crons": ["0 * * * *"]
+  },
+
+  "observability": {
+    "enabled": true
+  }
+}
