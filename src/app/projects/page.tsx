@@ -5,6 +5,12 @@ import Footer from "@/components/footer";
 export const metadata: Metadata = {
 	title: "Projects",
 	description: "Tools and posts from the Build Canada team",
+	alternates: { canonical: "/projects" },
+	openGraph: {
+		title: "Projects",
+		description: "Tools and posts from the Build Canada team",
+		url: "/projects",
+	},
 };
 
 function ArrowIcon() {

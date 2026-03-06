@@ -3,9 +3,16 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-	title: "About | Build Canada",
+	title: "About",
 	description:
-		"Build Canada is a movement for people who are done waiting. It's for those who want to make Canada better—not by talking, but by building.",
+		"Build Canada is a movement for people who are done waiting. It\u2019s for those who want to make Canada better\u2014not by talking, but by building.",
+	alternates: { canonical: "/about" },
+	openGraph: {
+		title: "About Build Canada",
+		description:
+			"A movement for people who are done waiting\u2014for those who want to make Canada better by building.",
+		url: "/about",
+	},
 };
 
 interface TeamMember {

@@ -4,7 +4,13 @@ import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
 	title: "Get Involved",
-	description: "Join the movement to build Canada",
+	description: "Join 3000+ people building a better Canada",
+	alternates: { canonical: "/get-involved" },
+	openGraph: {
+		title: "Get Involved",
+		description: "Join 3000+ people building a better Canada",
+		url: "/get-involved",
+	},
 };
 
 export default function GetInvolvedPage() {
