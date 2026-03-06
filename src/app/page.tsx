@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar";
 function ArrowIcon() {
 	return (
 		<img
-			src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cb9_arrow.svg"
+			src="/images/arrow.svg"
 			loading="lazy"
 			width={14}
 			height={14}
@@ -18,7 +18,7 @@ function ArrowIcon() {
 function ArrowIcon2() {
 	return (
 		<img
-			src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cb9_arrow.svg"
+			src="/images/arrow.svg"
 			loading="lazy"
 			width={14}
 			height={14}
@@ -303,10 +303,10 @@ export default function Home() {
 								>
 									<div className="project-image-container">
 										<img
-											src="https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68de96320072e35aac7ba24d_Frame%20710.png"
+											src="/images/Frame-710.png"
 											loading="lazy"
 											alt="Trade Barriers Tracker"
-											srcSet="https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68de96320072e35aac7ba24d_Frame%20710-p-500.png 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68de96320072e35aac7ba24d_Frame%20710-p-800.png 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68de96320072e35aac7ba24d_Frame%20710-p-1080.png 1080w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68de96320072e35aac7ba24d_Frame%20710.png 1200w"
+											srcSet="/images/Frame-710-p-500.png 500w, /images/Frame-710-p-800.png 800w, /images/Frame-710-p-1080.png 1080w, /images/Frame-710.png 1200w"
 											sizes="100vw"
 											className="project-image"
 										/>
@@ -329,10 +329,10 @@ export default function Home() {
 								>
 									<div className="project-image-container">
 										<img
-											src="https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68d578161964a746107aded3_builder-mp.png"
+											src="/images/builder-mp.png"
 											loading="lazy"
 											alt="Builder MP"
-											srcSet="https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68d578161964a746107aded3_builder-mp-p-500.png 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68d578161964a746107aded3_builder-mp-p-800.png 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68d578161964a746107aded3_builder-mp-p-1080.png 1080w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68d578161964a746107aded3_builder-mp.png 1200w"
+											srcSet="/images/builder-mp-p-500.png 500w, /images/builder-mp-p-800.png 800w, /images/builder-mp-p-1080.png 1080w, /images/builder-mp.png 1200w"
 											sizes="100vw"
 											className="project-image"
 										/>
@@ -382,7 +382,7 @@ export default function Home() {
 										</div>
 										<div className="builder">
 											<img
-												src="https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/697b7ef8474af24d980829e0_Logo%20Box.png"
+												src="/images/Logo-Box.png"
 												loading="lazy"
 												width={60}
 												height={60}
@@ -414,7 +414,7 @@ export default function Home() {
 										</div>
 										<div className="builder">
 											<img
-												src="https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/6996299ae9a47c55bd5ab9f2_joh%20ruffolo.jpeg"
+												src="/images/joh-ruffolo.jpeg"
 												loading="lazy"
 												width={60}
 												height={60}

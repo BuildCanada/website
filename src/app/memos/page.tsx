@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 function ArrowIcon() {
 	return (
 		<img
-			src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cb9_arrow.svg"
+			src="/images/arrow.svg"
 			loading="lazy"
 			width={14}
 			height={14}
@@ -21,7 +21,7 @@ function ArrowIcon() {
 function ArrowIcon2() {
 	return (
 		<img
-			src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cb9_arrow.svg"
+			src="/images/arrow.svg"
 			loading="lazy"
 			width={14}
 			height={14}
@@ -67,7 +67,7 @@ const memos = [
 		description:
 			"Canada has every raw ingredient to be a top-5 global power \u2014 massive land, critical mineral wealth, abundant energy, an educated population, and geographic security \u2014 but has squandered these advantages through decades of bad choices.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/697b7ef8474af24d980829e0_Logo%20Box.png",
+			"/images/Logo-Box.png",
 		author: "Build Canada",
 		role: "Memo",
 	},
@@ -78,7 +78,7 @@ const memos = [
 		description:
 			"Canada needs to stop renting its digital backbone from foreign powers. 60% of our cloud runs on American servers under American law. This is a surrender of sovereignty.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/6996299ae9a47c55bd5ab9f2_joh%20ruffolo.jpeg",
+			"/images/joh-ruffolo.jpeg",
 		author: "John Ruffolo",
 		role: "Founder Maverix Private Equity",
 	},
@@ -89,7 +89,7 @@ const memos = [
 		description:
 			"Canada is in a productivity and execution crisis while the world is moving faster and becoming less forgiving. In this environment, delay weakens our economy and our ability to protect our interests.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/697b7ef8474af24d980829e0_Logo%20Box.png",
+			"/images/Logo-Box.png",
 		author: "Build Canada",
 		role: "Memo",
 	},
@@ -100,7 +100,7 @@ const memos = [
 		description:
 			"A loophole in Canada\u2019s Start-Up Visa program created a path for fraud and abuse. \u201cConsultants\u201d brought in thousands of unqualified people to the country and pocketed millions of dollars.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69725ef4dec7cc54bc5e4b19_boris-wertz.jpg",
+			"/images/boris-wertz.jpg",
 		author: "Boris Wertz",
 		role: "Founder Version One Ventures",
 	},
@@ -111,7 +111,7 @@ const memos = [
 		description:
 			"Economic growth is driven by the creation of new companies and investments by existing companies. But in the last decade company formation and investment in Canada has collapsed.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/696907705d3abc355cd82c58_image0%20(1).png",
+			"/images/image0-1.png",
 		author: "Kim G C Moody",
 		role: "Founder Moodys tax",
 	},
@@ -122,7 +122,7 @@ const memos = [
 		description:
 			"Canada excels at research and early startup formation but fails to grow companies past $100M in revenue\u2014this is a critical gap to fix.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69445bd3220be034228e0a0c_Michael%20Serbinis%2C%20CEO%2C%20League%20-%20Executive%20Photo%20(1)%20(2).jpg",
+			"/images/Michael-Serbinis,-CEO,-League---Executive-Photo-1-2.jpg",
 		author: "Michael Serbinis",
 		role: "CEO and Founder of League",
 	},
@@ -133,7 +133,7 @@ const memos = [
 		description:
 			"AI is a tool, not a goal. It only matters when applied to real problems with measurable outcomes like faster healthcare or better education.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/693ad36d8aa538f03e9993df_row2.Ajay-Agrawal-scaled-e1693577110626.jpg",
+			"/images/row2.Ajay-Agrawal-scaled-e1693577110626.jpg",
 		author: "Ajay Agrawal",
 		role: "Professor, Univ. of Toronto",
 	},
@@ -144,7 +144,7 @@ const memos = [
 		description:
 			"Productivity is the path to prosperity. AI is a general purpose technology that could help deliver productivity gains across every sector\u2014but only if Canada acts with urgency.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/679d23fc682f2bf860558cdd_dan_debow.jpg",
+			"/images/dan_debow.jpg",
 		author: "Daniel Debow",
 		role: "3x Founder",
 	},
@@ -155,7 +155,7 @@ const memos = [
 		description:
 			"A fifth of Canadians are functionally illiterate. This has massive social impacts and costs Canada $67 billion in productivity.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/692721e62b2e0b24c9390942_heather-reisman.png",
+			"/images/heather-reisman.png",
 		author: "Heather Reisman",
 		role: "Founder & CEO Indigo",
 	},
@@ -166,7 +166,7 @@ const memos = [
 		description:
 			"Canada is the undisputed mining capital of the world. But that leadership is slipping at the exact time that the world needs Canadian minerals the most.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/6903895594922f52c092c45b_Macleans_headshot_square.jpeg",
+			"/images/Macleans_headshot_square.jpeg",
 		author: "Chris Doornbos",
 		role: "CEO of E3 Lithium",
 	},
@@ -177,7 +177,7 @@ const memos = [
 		description:
 			"Steel is as essential to a modern nation\u2019s prosperity as food. But over the last several decades Canada has allowed its steel output to wither.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68fa14d27b5d3a8cd11a3b88_barry-zekelman.png",
+			"/images/barry-zekelman.png",
 		author: "Barry Zekelman",
 		role: "CEO Zekelman Industries",
 	},
@@ -188,7 +188,7 @@ const memos = [
 		description:
 			"Canada has a world-class, compound semiconductor fab that could be a key part of advanced technology supply chains but it has been underinvested in for two decades.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a12a8647b6ef581cb25765_1677271969811.jpeg",
+			"/images/1677271969811.jpeg",
 		author: "Ivan Zhang",
 		role: "Co-Founder Cohere",
 	},
@@ -199,7 +199,7 @@ const memos = [
 		description:
 			"The U.S. decision to impose a $100,000 H-1B fee creates both risks and opportunities. Canada needs to move fast.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a12a86e07e04774aac0a25_1683657097819.jpeg",
+			"/images/1683657097819.jpeg",
 		author: "Martin Basiri",
 		role: "Founder & CEO Passage",
 	},
@@ -210,7 +210,7 @@ const memos = [
 		description:
 			"The ITB program requires defence contractors to invest in the Canadian ecosystem. But restrictions limit the program\u2019s benefits and prevent support for Canadian sovereign capabilities.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/688cfd455c6a5f80328a47c8_Eliot%20Pence.jpeg",
+			"/images/Eliot-Pence.jpeg",
 		author: "Eliot Pence",
 		role: "Founder Tofino Capital",
 	},
@@ -221,7 +221,7 @@ const memos = [
 		description:
 			"IRAP could be one of Canada\u2019s most impactful industrial policies but suffers from high operating costs, low quality capital allocation, and significant administrative burden.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a12a8681b15052211e6889_1592964980753.jpeg",
+			"/images/1592964980753.jpeg",
 		author: "Jeff Adamson",
 		role: "Co-Founder Neo Financial",
 	},
@@ -232,7 +232,7 @@ const memos = [
 		description:
 			"SR&ED credits are the largest federal support for R&D. But the process is complex, often rewards the wrong companies, and doesn\u2019t support business value.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a25291ac439909bf88f1c6_harley.jpeg",
+			"/images/harley.jpeg",
 		author: "Harley Finkelstein",
 		role: "President Shopify",
 	},
@@ -243,7 +243,7 @@ const memos = [
 		description:
 			"Identity verification is a key part of daily life allowing Canadians to access banking, healthcare, and other services online.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68a602622d9c98c9b7870f3e_Peter%20Carrescia.png",
+			"/images/Peter-Carrescia.png",
 		author: "Peter Carrescia",
 		role: "Co-Founder goConfirm",
 	},
@@ -254,7 +254,7 @@ const memos = [
 		description:
 			"Canada has some of the world\u2019s most spectacular natural beauty. But most parts of the country are too hard to get to.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/689e05ad8f03354b35ae6fc7_Social%20Embedds%20Image%20(1).png",
+			"/images/Social-Embedds-Image-1.png",
 		author: "Zita Cobb",
 		role: "Co-Founder and CEO Shorefast",
 	},
@@ -265,7 +265,7 @@ const memos = [
 		description:
 			"It takes 16 years to acquire military equipment. We need to reform our defence procurement system.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/688cfd455c6a5f80328a47c8_Eliot%20Pence.jpeg",
+			"/images/Eliot-Pence.jpeg",
 		author: "Eliot Pence",
 		role: "Founder Tofino Capital",
 	},
@@ -276,7 +276,7 @@ const memos = [
 		description:
 			"Canada was the 3rd country in space, but now ranks 12th in spending. This $5B industry is stagnant while other countries are experiencing massive growth.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/688a36f0841f379c7a8172ae_mina-mitry.png",
+			"/images/mina-mitry.png",
 		author: "Mina Mitry",
 		role: "Co-founder & CEO at Kepler",
 	},
@@ -287,7 +287,7 @@ const memos = [
 		description:
 			"Government and private sector need to work together in this moment of economic transformation",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a102271f335afe5447a76a_andrew-graham.jpeg",
+			"/images/andrew-graham.jpeg",
 		author: "Andrew Graham",
 		role: "Co-founder & CEO at Borrowell",
 	},
@@ -298,7 +298,7 @@ const memos = [
 		description:
 			"Canada\u2019s outdated capital gains policies are driving entrepreneurs and investors away. We need competitive tax reform to keep talent and investment here.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68790aba67260893a5603a33_Screenshot%202025-07-09%20at%201.46.27%E2%80%AFPM.png",
+			"/images/Screenshot-2025-07-09-at-1.46.27 PM.png",
 		author: "Matt Cohen",
 		role: "Founder Ripple Ventures",
 	},
@@ -309,7 +309,7 @@ const memos = [
 		description:
 			"Canada will become the world\u2019s most AI\u2011literate nation by guaranteeing every citizen a path to mastering the technology.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a12a87d0886b63a3b5eb0e_1687108358492.jpeg",
+			"/images/1687108358492.jpeg",
 		author: "Mike Murchison",
 		role: "Co-Founder & CEO Ada",
 	},
@@ -320,7 +320,7 @@ const memos = [
 		description:
 			"Let\u2019s make it easy for the world\u2019s top scientists, innovators and engineers to come to Canada, and give them every reason to commercialize their findings here.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69445bd3220be034228e0a0c_Michael%20Serbinis%2C%20CEO%2C%20League%20-%20Executive%20Photo%20(1)%20(2).jpg",
+			"/images/Michael-Serbinis,-CEO,-League---Executive-Photo-1-2.jpg",
 		author: "Michael Serbinis",
 		role: "CEO and Founder of League",
 	},
@@ -331,7 +331,7 @@ const memos = [
 		description:
 			"A new points-based system will recognize and reward immigrant contributions, not just check their qualifications prior to arrival.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a0ff86bab6add17dad0e2f_tobi.jpg",
+			"/images/tobi.jpg",
 		author: "Tobi Lutke",
 		role: "Co-Founder & CEO Shopify",
 	},
@@ -342,7 +342,7 @@ const memos = [
 		description:
 			"Canada has seen an alarming decline in national pride, community engagement, and unity. A mandatory one-year civic engagement program will reconnect Canadians with each other and their country.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/679d23fc682f2bf860558cdd_dan_debow.jpg",
+			"/images/dan_debow.jpg",
 		author: "Daniel Debow",
 		role: "3x Founder",
 	},
@@ -353,7 +353,7 @@ const memos = [
 		description:
 			"AI is transforming creative industries. Let\u2019s supercharge our world-class film, TV, advertising, gaming, and music sectors and turn this disruption into a competitive advantage.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67f9275b8a0e0e3d6157f96a_WhatsApp%20Image%202025-04-11%20at%2010.27.04%20AM.jpeg",
+			"/images/WhatsApp-Image-2025-04-11-at-10.27.04-AM.jpeg",
 		author: "Aidan Tracey",
 		role: "CEO Tracxtion",
 	},
@@ -364,7 +364,7 @@ const memos = [
 		description:
 			"Prosperity does not come without an abundance of energy. But today it is exceptionally difficult to build new generation, transmission, and storage infrastructure.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67f6a6cbaa806139a14a7599_george-babu.jpeg",
+			"/images/george-babu.jpeg",
 		author: "George Babu",
 		role: "Founder Aire Labs",
 	},
@@ -375,7 +375,7 @@ const memos = [
 		description:
 			"Canada\u2019s current innovation strategy has failed. We pay for promises, not results. We must reward proven successes instead.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67eea4791b7440901fec46a0_jamie.jpeg",
+			"/images/jamie.jpeg",
 		author: "Jamie McDonald",
 		role: "CEO A2X",
 	},
@@ -386,7 +386,7 @@ const memos = [
 		description:
 			"It\u2019s time to refocus. Here is a line-by-line analysis of Canada\u2019s spend today, with suggestions to re-allocate spend from programs that are no longer serving the public interest.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/679d23fc682f2bf860558d04_lucy_hargreaves.jpeg",
+			"/images/lucy_hargreaves.jpeg",
 		author: "Lucy Hargreaves",
 		role: "Founder Canada Spends",
 	},
@@ -397,7 +397,7 @@ const memos = [
 		description:
 			"Canada\u2019s natural resource wealth is finite. A Sovereign Wealth Fund transforms today\u2019s temporary resource profits into lasting, shared prosperity for all Canadians.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a12a87b94cd31f417f10d5_1680527374946.jpeg",
+			"/images/1680527374946.jpeg",
 		author: "Shane Parrish",
 		role: "Founder Farnam Street",
 	},
@@ -408,7 +408,7 @@ const memos = [
 		description:
 			"Canada\u2019s military has fallen behind. We need to modernize fast or risk losing our ability to protect ourselves and support our allies.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67eaa4484930467af4b37329_shaun-francis.jpeg",
+			"/images/shaun-francis.jpeg",
 		author: "Shaun Francis",
 		role: "Chair & CEO Medcan",
 	},
@@ -419,7 +419,7 @@ const memos = [
 		description:
 			"Our world-class higher education system is being undermined by a critical shortage of student housing. Let\u2019s build more homes to house some of our brightest minds.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67e6c24214185e094e5c3ca5_richard-abboud.jpeg",
+			"/images/richard-abboud.jpeg",
 		author: "Richard Abboud",
 		role: "Founder & CEO Forum Asset Mgmt",
 	},
@@ -430,7 +430,7 @@ const memos = [
 		description:
 			"Outdated zoning rules and slow approval processes prevent homes from being built. Let\u2019s transform this system currently designed to block development and preserve the status quo.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67e42efd3b036dbb802d6ef9_julie.jpeg",
+			"/images/julie.jpeg",
 		author: "Julie Di Lorenzo",
 		role: "Pres. Mirabella Development",
 	},
@@ -441,7 +441,7 @@ const memos = [
 		description:
 			"Well-meaning efforts to curb foreign speculation have made it difficult for anyone to invest in building new homes. Let\u2019s make it easier for people to get the financing they need to build.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67e42efd3b036dbb802d6ef9_julie.jpeg",
+			"/images/julie.jpeg",
 		author: "Julie Di Lorenzo",
 		role: "Pres. Mirabella Development",
 	},
@@ -452,7 +452,7 @@ const memos = [
 		description:
 			"Canada stopped building purpose-built rentals in the 1980s. Through targeted tax incentives, we can have the very people who serve our communities \u2013 nurses, teachers, police officers \u2013 afford to live in them again.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67e2c917c489dee022a462a7_maz.jpeg",
+			"/images/maz.jpeg",
 		author: "Mazyar Mortazavi",
 		role: "CEO TAS",
 	},
@@ -463,7 +463,7 @@ const memos = [
 		description:
 			"We tax cigarettes to reduce smoking \u2013 why are we taxing housing to death during a housing crisis? When taxes can make up 36% of a new home, it\u2019s no wonder Canadians can\u2019t afford them.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67e167e9f1204265bcf8e56a_brad-carr.jpeg",
+			"/images/brad-carr.jpeg",
 		author: "Brad Carr",
 		role: "CEO Mattamy Homes Canada",
 	},
@@ -474,7 +474,7 @@ const memos = [
 		description:
 			"Canadians don\u2019t control their own financial data, making it painful to change providers or access new services. It\u2019s time for Canadians to take control of their own data.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a102271f335afe5447a76a_andrew-graham.jpeg",
+			"/images/andrew-graham.jpeg",
 		author: "Andrew Graham",
 		role: "Co-founder & CEO at Borrowell",
 	},
@@ -485,7 +485,7 @@ const memos = [
 		description:
 			"Stablecoins backed by the Canadian dollar will make transactions faster, cheaper, and more efficient, modernizing our digital payment infrastructure.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a12a87eb3df30ef64fd916_1570026127463.jpeg",
+			"/images/1570026127463.jpeg",
 		author: "Som Seif",
 		role: "Founder Purpose Unlimited",
 	},
@@ -496,7 +496,7 @@ const memos = [
 		description:
 			"With modest changes to Old Age Security, we can create a wealth fund that gives every child $10,000 at birth, available for use towards things like education starting at 18.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67cf00f5bc2ec5f3ea1322fc_joe-canavan.jpeg",
+			"/images/joe-canavan.jpeg",
 		author: "Joe Canavan",
 		role: "Ex-Chairman Children\u2019s Aid Fnd",
 	},
@@ -507,7 +507,7 @@ const memos = [
 		description:
 			"Skilled tradespeople are the backbone of Canada\u2019s future. Let\u2019s get them building by reforming licensing to be based on a person\u2019s skills rather than the hours they\u2019ve trained.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67c9d578357db028dd7df2db_toby-shannon.jpg",
+			"/images/toby-shannon.jpg",
 		author: "Toby Shannan",
 		role: "Former COO Shopify",
 	},
@@ -518,7 +518,7 @@ const memos = [
 		description:
 			"Despite past efforts, Canadians still have some of the highest phone bills in the world. Drastic measures are needed to create affordable wireless that is actually long-lasting.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a2198b82393df7c772dfa8_Brice_Scheschuk.jpg",
+			"/images/Brice_Scheschuk.jpg",
 		author: "Brice Scheschuk",
 		role: "Globalive, Ex-Wind Mobile",
 	},
@@ -529,7 +529,7 @@ const memos = [
 		description:
 			"Canada imports $65 billion worth of food annually. But technology is rapidly making it possible for Canada to produce a lot of the foods we eat here at home.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67c0a66b236cdbe8e9b68054_jon-lomow.jpeg",
+			"/images/jon-lomow.jpeg",
 		author: "Jon Lomow",
 		role: "Co-Founder Fieldless Farms",
 	},
@@ -540,7 +540,7 @@ const memos = [
 		description:
 			"Canadians have rightly grown skeptical of whether our government can do anything big. Let\u2019s prove this isn\u2019t true. Let\u2019s build like a world leader.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a25291ac439909bf88f1c6_harley.jpeg",
+			"/images/harley.jpeg",
 		author: "Harley Finkelstein",
 		role: "President Shopify",
 	},
@@ -551,7 +551,7 @@ const memos = [
 		description:
 			"Canada cannot afford to be held hostage to changing geopolitics. Let\u2019s fast-track critical infrastructure so that we can easily access and sell Canadian energy.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67b792bd8e499bebb8af7a17_adam-waterous.jpeg",
+			"/images/adam-waterous.jpeg",
 		author: "Adam Waterous",
 		role: "CEO at Waterous Energy Fund",
 	},
@@ -562,7 +562,7 @@ const memos = [
 		description:
 			"The federal workforce has grown to an all-time high while delivering diminishing results. Let\u2019s reform the system to deliver better services at lower costs.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a1050afb9e2344d42a7ed4_1598795500173.jpeg",
+			"/images/1598795500173.jpeg",
 		author: "Daniel Eberhard",
 		role: "Founder & CEO Koho",
 	},
@@ -573,7 +573,7 @@ const memos = [
 		description:
 			"AI is the key technology to unlock Canadian prosperity. We can wait and be forced to buy this technology from other global providers or become a world-leading creator of AI solutions ourselves.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67ace54543fd0a7567126229_1730812435216.jpeg",
+			"/images/1730812435216.jpeg",
 		author: "Benjamin Alarie",
 		role: "Founder & CEO Blue J",
 	},
@@ -584,7 +584,7 @@ const memos = [
 		description:
 			"Your credentials should work everywhere in Canada. Your business should sell everywhere in Canada. We are one country, let\u2019s have one market.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a12a88a619e20486f80dde_1544638578871.jpeg",
+			"/images/1544638578871.jpeg",
 		author: "Wayne Pommen",
 		role: "CRO Affirm, Ex-CEO PayBright",
 	},
@@ -595,7 +595,7 @@ const memos = [
 		description:
 			"Your medical history should be available instantly to you and any doctor that needs it, anywhere in Canada.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69445bd3220be034228e0a0c_Michael%20Serbinis%2C%20CEO%2C%20League%20-%20Executive%20Photo%20(1)%20(2).jpg",
+			"/images/Michael-Serbinis,-CEO,-League---Executive-Photo-1-2.jpg",
 		author: "Michael Serbinis",
 		role: "CEO and Founder of League",
 	},
@@ -607,7 +607,7 @@ const memos = [
 		description:
 			"Creators should be rewarded for creating content that celebrates Canada and Canadian achievements",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a12a87d2b2a20e10abd71f_1721412427252.jpeg",
+			"/images/1721412427252.jpeg",
 		author: "Michael Litt",
 		role: "Co-Founder & CEO Vidyard",
 	},
@@ -618,7 +618,7 @@ const memos = [
 		description:
 			"Canada could be the friendliest place in the world to build new transportation technologies by rapidly and safely permitting new modes of transportation",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a12a88f53afdb0da334e72_1731429223135.jpeg",
+			"/images/1731429223135.jpeg",
 		author: "Stewart Lyons",
 		role: "CEO Bird",
 	},
@@ -630,7 +630,7 @@ const memos = [
 		description:
 			"The world\u2019s most innovative companies compete for top talent. It\u2019s time Canada competed the same way for immigrants.",
 		avatar:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a12a86e07e04774aac0a25_1683657097819.jpeg",
+			"/images/1683657097819.jpeg",
 		author: "Martin Basiri",
 		role: "Founder & CEO Passage",
 	},

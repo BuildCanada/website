@@ -21,7 +21,7 @@ export default function Footer() {
 									className="social-icon-footer"
 								>
 									<img
-										src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/686840a8a24a05ed6ca8d1b8_email%20(1).png"
+										src="/images/email-1.png"
 										loading="lazy"
 										alt="Email"
 										className="image invert"
@@ -34,7 +34,7 @@ export default function Footer() {
 									className="social-icon-footer"
 								>
 									<img
-										src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558ce9_x.svg"
+										src="/images/x.svg"
 										loading="lazy"
 										alt="X"
 										className="image invert"
@@ -47,7 +47,7 @@ export default function Footer() {
 									className="social-icon-footer"
 								>
 									<img
-										src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558ce7_linkedin.svg"
+										src="/images/linkedin.svg"
 										loading="lazy"
 										alt="LinkedIn"
 										className="image invert"
@@ -60,7 +60,7 @@ export default function Footer() {
 									className="social-icon-footer"
 								>
 									<img
-										src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558ce5_instagram.svg"
+										src="/images/instagram.svg"
 										loading="lazy"
 										alt="Instagram"
 										className="image"
@@ -73,7 +73,7 @@ export default function Footer() {
 									className="social-icon-footer"
 								>
 									<img
-										src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cc5_bluesky.svg"
+										src="/images/bluesky.svg"
 										loading="lazy"
 										alt="Bluesky"
 										className="image invert"
@@ -86,7 +86,7 @@ export default function Footer() {
 									className="social-icon-footer"
 								>
 									<img
-										src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/68489fb73ab8571967cffbd9_github.svg"
+										src="/images/github.svg"
 										loading="lazy"
 										alt="GitHub"
 										className="image invert"

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 function ArrowIcon() {
 	return (
 		<img
-			src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cb9_arrow.svg"
+			src="/images/arrow.svg"
 			loading="lazy"
 			width={14}
 			height={14}
@@ -24,7 +24,7 @@ function ArrowIcon() {
 function ArrowIcon2() {
 	return (
 		<img
-			src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cb9_arrow.svg"
+			src="/images/arrow.svg"
 			loading="lazy"
 			width={14}
 			height={14}
@@ -56,27 +56,27 @@ const projects = [
 			"Tracking progress of interprovincial trade agreements across Canada",
 		href: "https://buildcanada.com/trade-barriers",
 		image:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68de96320072e35aac7ba24d_Frame%20710.png",
+			"/images/Frame-710.png",
 		srcSet:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68de96320072e35aac7ba24d_Frame%20710-p-500.png 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68de96320072e35aac7ba24d_Frame%20710-p-800.png 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68de96320072e35aac7ba24d_Frame%20710-p-1080.png 1080w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68de96320072e35aac7ba24d_Frame%20710.png 1200w",
+			"/images/Frame-710-p-500.png 500w, /images/Frame-710-p-800.png 800w, /images/Frame-710-p-1080.png 1080w, /images/Frame-710.png 1200w",
 	},
 	{
 		title: "Builder MP",
 		description: "What would a Builder think of these parliament bills?",
 		href: "https://buildcanada.com/bills",
 		image:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68d578161964a746107aded3_builder-mp.png",
+			"/images/builder-mp.png",
 		srcSet:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68d578161964a746107aded3_builder-mp-p-500.png 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68d578161964a746107aded3_builder-mp-p-800.png 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68d578161964a746107aded3_builder-mp-p-1080.png 1080w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68d578161964a746107aded3_builder-mp.png 1200w",
+			"/images/builder-mp-p-500.png 500w, /images/builder-mp-p-800.png 800w, /images/builder-mp-p-1080.png 1080w, /images/builder-mp.png 1200w",
 	},
 	{
 		title: "Great Canadian Builders",
 		description: "Stories of Canadians who have transformed our world",
 		href: "/great-canadian-builders",
 		image:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/6894b93c6d8f07928f78282c_Frame%2050.png",
+			"/images/Frame-50.png",
 		srcSet:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/6894b93c6d8f07928f78282c_Frame%2050-p-500.png 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/6894b93c6d8f07928f78282c_Frame%2050-p-800.png 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/6894b93c6d8f07928f78282c_Frame%2050-p-1080.png 1080w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/6894b93c6d8f07928f78282c_Frame%2050.png 1200w",
+			"/images/Frame-50-p-500.png 500w, /images/Frame-50-p-800.png 800w, /images/Frame-50-p-1080.png 1080w, /images/Frame-50.png 1200w",
 	},
 	{
 		title: "Exit Tax Calculator",
@@ -84,9 +84,9 @@ const projects = [
 			"Compare exit scenarios for founders and investors in Canada vs. US",
 		href: "https://buildcanada.com/exit-tax-calculator",
 		image:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/687ea8a5008a84eeca7c4299_Frame%2049.png",
+			"/images/Frame-49.png",
 		srcSet:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/687ea8a5008a84eeca7c4299_Frame%2049-p-500.png 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/687ea8a5008a84eeca7c4299_Frame%2049-p-800.png 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/687ea8a5008a84eeca7c4299_Frame%2049.png 1015w",
+			"/images/Frame-49-p-500.png 500w, /images/Frame-49-p-800.png 800w, /images/Frame-49.png 1015w",
 	},
 	{
 		title: "Where Your Tax Dollars Go",
@@ -94,9 +94,9 @@ const projects = [
 			"A personalized breakdown of how much you contribute to different government services",
 		href: "https://canadaspends.com/tax-visualizer",
 		image:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/687811a65d256d72ec4df014_tax-viz.png",
+			"/images/tax-viz.png",
 		srcSet:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/687811a65d256d72ec4df014_tax-viz-p-500.png 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/687811a65d256d72ec4df014_tax-viz-p-800.png 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/687811a65d256d72ec4df014_tax-viz.png 1015w",
+			"/images/tax-viz-p-500.png 500w, /images/tax-viz-p-800.png 800w, /images/tax-viz.png 1015w",
 	},
 	{
 		title: "Outcomes Tracker",
@@ -104,9 +104,9 @@ const projects = [
 			"Tracking progress of key government commitments and their impact",
 		href: "/tracker",
 		image:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68543628388dc1c0bcaf945b_Frame%2045.png",
+			"/images/Frame-45.png",
 		srcSet:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68543628388dc1c0bcaf945b_Frame%2045-p-500.png 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68543628388dc1c0bcaf945b_Frame%2045-p-800.png 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68543628388dc1c0bcaf945b_Frame%2045.png 1015w",
+			"/images/Frame-45-p-500.png 500w, /images/Frame-45-p-800.png 800w, /images/Frame-45.png 1015w",
 	},
 	{
 		title: "Canada Spends",
@@ -114,9 +114,9 @@ const projects = [
 			"Breaking down government finances to understand how your money is being spent",
 		href: "https://canadaspends.com",
 		image:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/685336d35879963049f0cc96_Frame%2044.png",
+			"/images/Frame-44.png",
 		srcSet:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/685336d35879963049f0cc96_Frame%2044-p-500.png 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/685336d35879963049f0cc96_Frame%2044-p-800.png 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/685336d35879963049f0cc96_Frame%2044.png 1015w",
+			"/images/Frame-44-p-500.png 500w, /images/Frame-44-p-800.png 800w, /images/Frame-44.png 1015w",
 	},
 	{
 		title: "Election Tracker",
@@ -124,9 +124,9 @@ const projects = [
 			"Tracking campaign promises made during the 2025 Federal Election with real-time updates and comprehensive analysis",
 		href: "https://2025.buildcanada.com",
 		image:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/685449eb6c158bd701ea1455_Frame%2046.png",
+			"/images/Frame-46.png",
 		srcSet:
-			"https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/685449eb6c158bd701ea1455_Frame%2046-p-500.png 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/685449eb6c158bd701ea1455_Frame%2046-p-800.png 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/685449eb6c158bd701ea1455_Frame%2046.png 1015w",
+			"/images/Frame-46-p-500.png 500w, /images/Frame-46-p-800.png 800w, /images/Frame-46.png 1015w",
 	},
 ];
 

@@ -21,18 +21,18 @@ export default function Navbar() {
 			{/* Mobile brand logo (visible < 992px) */}
 			<a href="/" className="navigation-button brand responsive">
 				<img
-					src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cc6_build_canada-wordmark.svg"
+					src="/images/build_canada-wordmark.svg"
 					loading="lazy"
 					width={104}
 					alt="Build Canada"
 					className="wordmark-logo"
 				/>
 				<img
-					src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cec_build_canada-emoji_logo.png"
+					src="/images/build_canada-emoji_logo.png"
 					loading="lazy"
 					width={119}
 					alt="Build Canada"
-					srcSet="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cec_emoji-logo-p-500.png 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cec_emoji-logo-p-800.png 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cec_build_canada-emoji_logo.png 1520w"
+					srcSet="/images/emoji-logo-p-500.png 500w, /images/emoji-logo-p-800.png 800w, /images/build_canada-emoji_logo.png 1520w"
 					className="emoji-logo"
 				/>
 			</a>
@@ -41,18 +41,18 @@ export default function Navbar() {
 			<nav role="navigation" className="nav-menu">
 				<a href="/" className="navigation-button brand">
 					<img
-						src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cc6_build_canada-wordmark.svg"
+						src="/images/build_canada-wordmark.svg"
 						loading="lazy"
 						width={119}
 						alt="Build Canada"
 						className="wordmark-logo"
 					/>
 					<img
-						src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cec_build_canada-emoji_logo.png"
+						src="/images/build_canada-emoji_logo.png"
 						loading="lazy"
 						width={119}
 						alt="Build Canada"
-						srcSet="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cec_emoji-logo-p-500.png 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cec_emoji-logo-p-800.png 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cec_build_canada-emoji_logo.png 1520w"
+						srcSet="/images/emoji-logo-p-500.png 500w, /images/emoji-logo-p-800.png 800w, /images/build_canada-emoji_logo.png 1520w"
 						className="emoji-logo"
 					/>
 				</a>

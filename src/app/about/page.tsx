@@ -43,7 +43,7 @@ function TeamCard({ member }: { member: TeamMember }) {
 						className="social-icon"
 					>
 						<img
-							src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558ce7_linkedin.svg"
+							src="/images/linkedin.svg"
 							loading="lazy"
 							alt="LinkedIn"
 							className="social-icon"
@@ -57,7 +57,7 @@ function TeamCard({ member }: { member: TeamMember }) {
 							className="social-icon"
 						>
 							<img
-								src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558ce9_x.svg"
+								src="/images/x.svg"
 								loading="lazy"
 								alt="X"
 								className="social-icon"
@@ -74,53 +74,53 @@ const team: TeamMember[] = [
 	{
 		name: "Lucy Hargreaves",
 		role: "CEO",
-		image: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/685d79603a9d5137886a301e_lucy.jpeg",
-		srcSet: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/685d79603a9d5137886a301e_lucy-p-500.jpeg 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/685d79603a9d5137886a301e_lucy.jpeg 800w",
+		image: "/images/lucy.jpeg",
+		srcSet: "/images/lucy-p-500.jpeg 500w, /images/lucy.jpeg 800w",
 		linkedin: "https://www.linkedin.com/in/lucyghargreaves/",
 		x: "https://x.com/lucyhargreaves4",
 	},
 	{
 		name: "Brendan Samek",
 		role: "Head of Engineering",
-		image: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/6854329f04b0ae4bfe017233_brendan.jpeg",
+		image: "/images/brendan.jpeg",
 		linkedin: "https://www.linkedin.com/in/brendan-samek/",
 		x: "https://x.com/brendan_samek",
 	},
 	{
 		name: "Zander Fraser",
 		role: "Head of Community",
-		image: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68dd90cdbd58fdb41323ca57_zander.webp",
-		srcSet: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68dd90cdbd58fdb41323ca57_zander-p-500.webp 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68dd90cdbd58fdb41323ca57_zander-p-800.webp 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68dd90cdbd58fdb41323ca57_zander.webp 1218w",
+		image: "/images/zander.webp",
+		srcSet: "/images/zander-p-500.webp 500w, /images/zander-p-800.webp 800w, /images/zander.webp 1218w",
 		linkedin: "https://www.linkedin.com/in/zmfraser/",
 		x: "https://x.com/zandertoo",
 	},
 	{
 		name: "Macoy Jackson",
 		role: "Head of Operations",
-		image: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69a9d09546fe2f855ebb8b27_Macoy.webp",
-		srcSet: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69a9d09546fe2f855ebb8b27_Macoy-p-500.webp 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69a9d09546fe2f855ebb8b27_Macoy-p-800.webp 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69a9d09546fe2f855ebb8b27_Macoy.webp 1200w",
+		image: "/images/Macoy.webp",
+		srcSet: "/images/Macoy-p-500.webp 500w, /images/Macoy-p-800.webp 800w, /images/Macoy.webp 1200w",
 		linkedin: "https://www.linkedin.com/in/macoyjackson/",
 		x: "https://x.com/macoy_jackson",
 	},
 	{
 		name: "Andrew Potter",
 		role: "Contract Media",
-		image: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67bb722cb76f9faa28d3022e_andrew-potter.jpeg",
+		image: "/images/andrew-potter.jpeg",
 		linkedin: "https://www.linkedin.com/in/jandrewpotter/",
 	},
 	{
 		name: "Luke Farag",
 		role: "Socials Lead",
-		image: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69a9d0c7cb6adb66a7c2ef02_Luke.webp",
-		srcSet: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69a9d0c7cb6adb66a7c2ef02_Luke-p-500.webp 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69a9d0c7cb6adb66a7c2ef02_Luke-p-800.webp 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69a9d0c7cb6adb66a7c2ef02_Luke.webp 1200w",
+		image: "/images/Luke.webp",
+		srcSet: "/images/Luke-p-500.webp 500w, /images/Luke-p-800.webp 800w, /images/Luke.webp 1200w",
 		linkedin: "https://www.linkedin.com/in/lukefarag/",
 		x: "https://x.com/LukeFarag",
 	},
 	{
 		name: "Clara de Oliveira Borba",
 		role: "Co-Op Memos",
-		image: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69a9d11d0ddf4ca7bccda860_Clara.webp",
-		srcSet: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69a9d11d0ddf4ca7bccda860_Clara-p-500.webp 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69a9d11d0ddf4ca7bccda860_Clara-p-800.webp 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/69a9d11d0ddf4ca7bccda860_Clara.webp 1199w",
+		image: "/images/Clara.webp",
+		srcSet: "/images/Clara-p-500.webp 500w, /images/Clara-p-800.webp 800w, /images/Clara.webp 1199w",
 		linkedin: "https://www.linkedin.com/in/claradeoliveiraborba/",
 	},
 ];
@@ -129,22 +129,22 @@ const board: TeamMember[] = [
 	{
 		name: "Daniel Debow",
 		role: "Chair of the Board",
-		image: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/679d23fc682f2bf860558cdd_dan_debow.jpg",
+		image: "/images/dan_debow.jpg",
 		linkedin: "https://www.linkedin.com/in/ddebow/",
 		x: "https://x.com/ddebow",
 	},
 	{
 		name: "Fiona McKean",
 		role: "Board Member",
-		image: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68dd8f15c364df9e5e10f19a_1576877829952.jpeg",
-		srcSet: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68dd8f15c364df9e5e10f19a_1576877829952-p-500.jpeg 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68dd8f15c364df9e5e10f19a_1576877829952.jpeg 800w",
+		image: "/images/1576877829952.jpeg",
+		srcSet: "/images/1576877829952-p-500.jpeg 500w, /images/1576877829952.jpeg 800w",
 		linkedin: "https://www.linkedin.com/in/fiona-mckean-591937b5/",
 		x: "https://x.com/FionaMcK",
 	},
 	{
 		name: "Jeff Adamson",
 		role: "Board Member",
-		image: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a12a8681b15052211e6889_1592964980753.jpeg",
+		image: "/images/1592964980753.jpeg",
 		linkedin: "https://www.linkedin.com/in/jeffadamson/",
 		x: "https://x.com/jeffcanadamson",
 	},
@@ -154,22 +154,22 @@ const advisors: TeamMember[] = [
 	{
 		name: "Ana Curic",
 		role: "Policy Advisor",
-		image: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/67a27f6204a441e42c3e6ecf_ana-curic-350x350-1.jpg",
+		image: "/images/ana-curic-350x350-1.jpg",
 		linkedin: "https://www.linkedin.com/in/ana-curic-a23a08164/",
 		x: "https://x.com/anacuric",
 	},
 	{
 		name: "Ryan Manucha",
 		role: "Trade Barriers Tracker",
-		image: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68dd9350bd58fdb4132473c1_RManucha_Headshot_.webp",
-		srcSet: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68dd9350bd58fdb4132473c1_RManucha_Headshot_-p-500.webp 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68dd9350bd58fdb4132473c1_RManucha_Headshot_-p-800.webp 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68dd9350bd58fdb4132473c1_RManucha_Headshot_.webp 1522w",
+		image: "/images/RManucha_Headshot_.webp",
+		srcSet: "/images/RManucha_Headshot_-p-500.webp 500w, /images/RManucha_Headshot_-p-800.webp 800w, /images/RManucha_Headshot_.webp 1522w",
 		linkedin: "https://www.linkedin.com/in/ryan-manucha-a914a7a1/",
 		x: "https://x.com/RyanManucha",
 	},
 	{
 		name: "Jen Mazzarolo",
 		role: "Communications Advisor",
-		image: "https://cdn.prod.website-files.com/679d23fc682f2bf860558cbc/68dd93f737031a4fa4b730ea_Jen_headshot.webp",
+		image: "/images/Jen_headshot.webp",
 		linkedin: "https://www.linkedin.com/in/jennifer-mazzarolo-cpa-ca/",
 	},
 ];

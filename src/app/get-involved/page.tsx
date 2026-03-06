@@ -154,10 +154,10 @@ export default function GetInvolvedPage() {
 						{/* Step 2: Connect with Others */}
 						<div className="get-involved-step flex">
 							<img
-								src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/693b2deda81525af5a4b4c29_f6d0b9c9dd2036a97355846a10f1bf4d_discord-snapshot.png"
+								src="/images/f6d0b9c9dd2036a97355846a10f1bf4d_discord-snapshot.png"
 								loading="lazy"
 								alt="Discord"
-								srcSet="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/693b2deda81525af5a4b4c29_f6d0b9c9dd2036a97355846a10f1bf4d_discord-snapshot-p-500.png 500w, https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/693b2deda81525af5a4b4c29_f6d0b9c9dd2036a97355846a10f1bf4d_discord-snapshot-p-800.png 800w, https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/693b2deda81525af5a4b4c29_f6d0b9c9dd2036a97355846a10f1bf4d_discord-snapshot.png 819w"
+								srcSet="/images/f6d0b9c9dd2036a97355846a10f1bf4d_discord-snapshot-p-500.png 500w, /images/f6d0b9c9dd2036a97355846a10f1bf4d_discord-snapshot-p-800.png 800w, /images/f6d0b9c9dd2036a97355846a10f1bf4d_discord-snapshot.png 819w"
 								sizes="(max-width: 819px) 100vw, 819px"
 								className="image-discord-snapshot"
 							/>
@@ -199,7 +199,7 @@ export default function GetInvolvedPage() {
 									others who believe in growth.
 								</p>
 								<img
-									src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/693b230f665b1ceba40a11e4_bb7669365ff529ff99f9d1ea684adb3b_canada-chapters.png"
+									src="/images/bb7669365ff529ff99f9d1ea684adb3b_canada-chapters.png"
 									loading="lazy"
 									alt="Canada chapters"
 									className="image-chapters"
@@ -236,7 +236,7 @@ export default function GetInvolvedPage() {
 						<div className="row">
 							<div className="value-prop">
 								<img
-									src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/693b35c21970e3decf20b777_a594c0524c97aa4d5b48c78a5fb36211_pledge-icon.png"
+									src="/images/a594c0524c97aa4d5b48c78a5fb36211_pledge-icon.png"
 									loading="lazy"
 									alt=""
 								/>
@@ -252,7 +252,7 @@ export default function GetInvolvedPage() {
 							<div className="border-sm light" />
 							<div className="value-prop">
 								<img
-									src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/693b35c2b627d570c86448a2_lightbulb-icon.png"
+									src="/images/lightbulb-icon.png"
 									loading="lazy"
 									alt=""
 								/>
@@ -274,7 +274,7 @@ export default function GetInvolvedPage() {
 							<div className="border-sm light" />
 							<div className="value-prop">
 								<img
-									src="https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/693b35c2f39122b6c81fe5ac_checklist-icon.png"
+									src="/images/checklist-icon.png"
 									loading="lazy"
 									alt=""
 								/>

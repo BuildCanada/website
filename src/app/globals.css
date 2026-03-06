@@ -1,35 +1,35 @@
 /* === Font Faces === */
 @font-face {
   font-family: "Founders Grotesk Mono";
-  src: url("https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558ce2_founders-grotesk-mono-regular.woff2") format("woff2");
+  src: url("/fonts/founders-grotesk-mono-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Financier Text";
-  src: url("https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558ce8_financier-text-regular.woff2") format("woff2");
+  src: url("/fonts/financier-text-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Financier Text";
-  src: url("https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cf8_financier-text-regular-italic.woff2") format("woff2");
+  src: url("/fonts/financier-text-regular-italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Financier Text";
-  src: url("https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cee_financier-text-bold.woff2") format("woff2");
+  src: url("/fonts/financier-text-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Soehne Kraftig";
-  src: url("https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/679d23fc682f2bf860558cf6_soehne-kraftig.woff2") format("woff2");
+  src: url("/fonts/soehne-kraftig.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -379,7 +379,7 @@ input.w-button {
   overflow: hidden;
 }
 .section.hero.hero-alt {
-  background-image: url("https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/6852f83a64293e8927aff7aa_jp-valery-Wptix9OYUDo-unsplash%20(1)%20copy.jpg");
+  background-image: url("/images/jp-valery-Wptix9OYUDo-unsplash-1-copy.jpg");
   background-position: 100%;
   background-size: cover;
   justify-content: flex-start;
@@ -621,7 +621,7 @@ input.w-button {
 }
 .spacer.spacer-image {
   background-image: linear-gradient(#0000 90%, #272727),
-    url("https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/68533994c70f541f2ab918b7_mike_lazaridis_483086.jpg");
+    url("/images/mike_lazaridis_483086.jpg");
   background-position: 0 0, 50%;
   background-size: auto, cover;
   height: 100%;
@@ -1358,7 +1358,7 @@ input.w-button {
 /* === Get Involved Page === */
 .section.hero.hero-alt-2 {
   background-image: linear-gradient(180deg, #fff0 36%, var(--cream)),
-    url("https://cdn.prod.website-files.com/679d23fc682f2bf860558c9a/693c704616548d3ab8b4467a_people-4.jpeg");
+    url("/images/people-4.jpeg");
   background-position: 0 0, 50%;
   background-size: auto, cover;
   justify-content: flex-end;
