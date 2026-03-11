@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "Get Involved",
@@ -145,12 +146,12 @@ export default function GetInvolvedPage() {
 									</form>
 									<div className="get-involved-privacy-text">
 										By signing up you agree to our{" "}
-										<a
+										<Link
 											href="/privacy-notice"
 											className="get-involved-privacy-anchor"
 										>
 											Community Guidelines and Privacy Notice
-										</a>
+										</Link>
 										.
 									</div>
 								</div>
@@ -251,9 +252,9 @@ export default function GetInvolvedPage() {
 									All Build Canada members who start their own event,
 									project, or campaign are asked to sign this pledge.
 								</p>
-								<a href="/pledge" className="primary-button w-button">
+								<Link href="/pledge" className="primary-button w-button">
 									Sign Pledge
-								</a>
+								</Link>
 							</div>
 							<div className="border-sm light" />
 							<div className="value-prop">

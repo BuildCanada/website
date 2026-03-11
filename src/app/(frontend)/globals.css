@@ -1349,6 +1349,10 @@ input.w-button {
   color: var(--dark);
   cursor: pointer;
 }
+.filter-button:hover {
+  background-color: var(--dark);
+  color: var(--cream);
+}
 .filter-button.is-active {
   border-color: var(--dark);
   background-color: var(--dark);

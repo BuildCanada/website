@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function Navbar() {
 	return (
 		<div className="navbar" role="banner">
 			{/* Mobile brand logo (visible < 992px) */}
-			<a href="/" className="navigation-button brand responsive">
+			<Link href="/" className="navigation-button brand responsive">
 				<img
 					src="/images/build_canada-wordmark.svg"
 					loading="lazy"
@@ -35,11 +36,11 @@ export default function Navbar() {
 					srcSet="/images/emoji-logo-p-500.png 500w, /images/emoji-logo-p-800.png 800w, /images/build_canada-emoji_logo.png 1520w"
 					className="emoji-logo"
 				/>
-			</a>
+			</Link>
 
 			{/* Desktop nav (visible >= 992px) */}
 			<nav role="navigation" className="nav-menu">
-				<a href="/" className="navigation-button brand">
+				<Link href="/" className="navigation-button brand">
 					<img
 						src="/images/build_canada-wordmark.svg"
 						loading="lazy"
@@ -55,19 +56,19 @@ export default function Navbar() {
 						srcSet="/images/emoji-logo-p-500.png 500w, /images/emoji-logo-p-800.png 800w, /images/build_canada-emoji_logo.png 1520w"
 						className="emoji-logo"
 					/>
-				</a>
-				<a href="/memos" className="navigation-button">
+				</Link>
+				<Link href="/memos" className="navigation-button">
 					Memos
-				</a>
-				<a href="/projects" className="navigation-button">
+				</Link>
+				<Link href="/projects" className="navigation-button">
 					Projects
-				</a>
-				<a href="/get-involved" className="navigation-button">
+				</Link>
+				<Link href="/get-involved" className="navigation-button">
 					Get Involved
-				</a>
-				<a href="/about" className="navigation-button">
+				</Link>
+				<Link href="/about" className="navigation-button">
 					About
-				</a>
+				</Link>
 				<a
 					href="https://shop.buildcanada.com"
 					target="_blank"
@@ -94,34 +95,34 @@ export default function Navbar() {
 			{/* Mobile menu overlay */}
 			<div className={`mobile-menu-overlay${menuOpen ? " is-open" : ""}`}>
 				<div>
-					<a
+					<Link
 						href="/memos"
 						className="navigation-button"
 						onClick={() => setMenuOpen(false)}
 					>
 						Memos
-					</a>
-					<a
+					</Link>
+					<Link
 						href="/projects"
 						className="navigation-button"
 						onClick={() => setMenuOpen(false)}
 					>
 						Projects
-					</a>
-					<a
+					</Link>
+					<Link
 						href="/get-involved"
 						className="navigation-button"
 						onClick={() => setMenuOpen(false)}
 					>
 						Get Involved
-					</a>
-					<a
+					</Link>
+					<Link
 						href="/about"
 						className="navigation-button"
 						onClick={() => setMenuOpen(false)}
 					>
 						About
-					</a>
+					</Link>
 					<a
 						href="https://shop.buildcanada.com"
 						target="_blank"

@@ -1,5 +1,7 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import Link from "next/link";
+import { getPayloadClient } from "@/lib/payload";
 
 function ArrowIcon() {
 	return (
@@ -43,7 +45,31 @@ function ReadMoreCta() {
 	);
 }
 
-export default function Home() {
+function getMediaUrl(media: unknown): string {
+	if (!media || typeof media !== "object") return "/images/Logo-Box.png";
+	const m = media as { url?: string };
+	return m.url || "/images/Logo-Box.png";
+}
+
+export default async function Home() {
+	const payload = await getPayloadClient();
+
+	const [memosResult, toolsResult, postsResult] = await Promise.all([
+		payload.find({
+			collection: "memos",
+			limit: 2,
+			sort: "-publishedAt",
+			where: { _status: { equals: "published" } },
+		}),
+		payload.find({ collection: "tools", limit: 2, sort: "createdAt" }),
+		payload.find({
+			collection: "posts",
+			where: { hidden: { not_equals: true } },
+			limit: 2,
+			sort: "-createdAt",
+		}),
+	]);
+
 	return (
 		<>
 			<div className="wrapper">
@@ -201,12 +227,12 @@ export default function Home() {
 								</form>
 								<div className="get-involved-privacy-text">
 									By signing up you agree to our{" "}
-									<a
+									<Link
 										href="/privacy-notice"
 										className="get-involved-privacy-anchor"
 									>
 										Community Guidelines and Privacy Notice
-									</a>
+									</Link>
 									.
 								</div>
 							</div>
@@ -253,8 +279,8 @@ export default function Home() {
 								</p>
 								<p className="hero-paragraph left-align">
 									We work with this community to build{" "}
-									<a href="/projects">tools for civic engagement</a>, publish{" "}
-									<a href="/memos">bold policy ideas</a>, and{" "}
+									<Link href="/projects">tools for civic engagement</Link>, publish{" "}
+									<Link href="/memos">bold policy ideas</Link>, and{" "}
 									<a
 										href="https://x.com/build_canada"
 										target="_blank"
@@ -266,9 +292,9 @@ export default function Home() {
 									<br />
 								</p>
 								<div className="hero-button-container">
-									<a href="/about" className="primary-button w-button">
+									<Link href="/about" className="primary-button w-button">
 										Learn More
-									</a>
+									</Link>
 									<a
 										href="https://buildcanada.substack.com/subscribe"
 										target="_blank"
@@ -296,61 +322,40 @@ export default function Home() {
 							</p>
 						</div>
 						<div className="memo-grid" role="list">
-							<div className="memo-item" role="listitem">
-								<a
-									href="https://buildcanada.com/trade-barriers"
-									className="memo-card"
-								>
-									<div className="project-image-container">
-										<img
-											src="/images/Frame-710.png"
-											loading="lazy"
-											alt="Trade Barriers Tracker"
-											srcSet="/images/Frame-710-p-500.png 500w, /images/Frame-710-p-800.png 800w, /images/Frame-710-p-1080.png 1080w, /images/Frame-710.png 1200w"
-											sizes="100vw"
-											className="project-image"
-										/>
+							{toolsResult.docs.map((tool) => {
+								const imageUrl = tool.image ? getMediaUrl(tool.image) : undefined;
+								return (
+									<div key={tool.id} className="memo-item" role="listitem">
+										<a
+											href={(tool.url as string) || "/projects"}
+											className="memo-card"
+										>
+											{imageUrl && (
+												<div className="project-image-container">
+													<img
+														src={imageUrl}
+														loading="lazy"
+														alt={tool.title}
+														srcSet={(tool.srcSet as string) || undefined}
+														sizes="100vw"
+														className="project-image"
+													/>
+												</div>
+											)}
+											<div className="card-text project-card-text">
+												<div className="memo-details">
+													<h3>{tool.title}</h3>
+													<p>{(tool.description as string) || ""}</p>
+												</div>
+											</div>
+										</a>
 									</div>
-									<div className="card-text project-card-text">
-										<div className="memo-details">
-											<h3>Trade Barriers Tracker</h3>
-											<p>
-												Tracking progress of interprovincial trade agreements
-												across Canada
-											</p>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div className="memo-item" role="listitem">
-								<a
-									href="https://buildcanada.com/bills"
-									className="memo-card"
-								>
-									<div className="project-image-container">
-										<img
-											src="/images/builder-mp.png"
-											loading="lazy"
-											alt="Builder MP"
-											srcSet="/images/builder-mp-p-500.png 500w, /images/builder-mp-p-800.png 800w, /images/builder-mp-p-1080.png 1080w, /images/builder-mp.png 1200w"
-											sizes="100vw"
-											className="project-image"
-										/>
-									</div>
-									<div className="card-text project-card-text">
-										<div className="memo-details">
-											<h3>Builder MP</h3>
-											<p>
-												What would a Builder think of these parliament bills?
-											</p>
-										</div>
-									</div>
-								</a>
-							</div>
+								);
+							})}
 						</div>
-						<a href="/projects" className="primary-button w-button">
+						<Link href="/projects" className="primary-button w-button">
 							See more Projects
-						</a>
+						</Link>
 					</div>
 
 					{/* === Policy Ideas Section === */}
@@ -367,75 +372,54 @@ export default function Home() {
 							</p>
 						</div>
 						<div className="memo-grid" role="list">
-							<div className="memo-item" role="listitem">
-								<a href="/memos/canada-superpower" className="memo-card">
-									<div className="card-text">
-										<div className="memo-details">
-											<h3>Canada Can Be a Superpower</h3>
-											<p>
-												Canada has every raw ingredient to be a top-5 global
-												power — massive land, critical mineral wealth, abundant
-												energy, an educated population, and geographic security
-												— but has squandered these advantages through decades
-												of bad choices.
-											</p>
-										</div>
-										<div className="builder">
-											<img
-												src="/images/Logo-Box.png"
-												loading="lazy"
-												width={60}
-												height={60}
-												alt=""
-												className="avatar-small"
-											/>
-											<div className="memo-card-name">
-												<p className="p2 sans">Build Canada</p>
-												<div className="meta">Memo</div>
-											</div>
-										</div>
-									</div>
-									<ReadMoreCta />
-								</a>
-							</div>
-							<div className="memo-item" role="listitem">
-								<a href="/memos/digital-sovereignty" className="memo-card">
-									<div className="card-text">
-										<div className="memo-details">
-											<h3>
-												A Blueprint for Canada&apos;s Digital Sovereignty
-											</h3>
-											<p>
-												Canada needs to stop renting its digital backbone from
-												foreign powers. 60% of our cloud runs on American
-												servers under American law. This is a surrender of
-												sovereignty.
-											</p>
-										</div>
-										<div className="builder">
-											<img
-												src="/images/joh-ruffolo.jpeg"
-												loading="lazy"
-												width={60}
-												height={60}
-												alt=""
-												className="avatar-small"
-											/>
-											<div className="memo-card-name">
-												<p className="p2 sans">John Ruffolo</p>
-												<div className="meta">
-													Founder Maverix Private Equity
+							{memosResult.docs.map((memo) => {
+								const builder =
+									memo.builder && typeof memo.builder === "object"
+										? memo.builder
+										: null;
+								const authorAvatar = builder?.profilePhoto
+									? getMediaUrl(builder.profilePhoto)
+									: (memo.builderAvatar as string) || "/images/Logo-Box.png";
+								const authorName =
+									builder?.name || (memo.builderName as string) || "Build Canada";
+								const authorTitle =
+									builder?.title || (memo.builderTitle as string) || "Memo";
+
+								const keyMessages = memo.keyMessages as Array<{ message: string }> | undefined;
+								const blurb = keyMessages?.[0]?.message || (memo.description as string) || "";
+
+								return (
+									<div key={memo.id} className="memo-item" role="listitem">
+										<Link href={`/memos/${memo.slug}`} className="memo-card">
+											<div className="card-text">
+												<div className="memo-details">
+													<h3>{memo.title}</h3>
+													<p>{blurb}</p>
+												</div>
+												<div className="builder">
+													<img
+														src={authorAvatar}
+														loading="lazy"
+														width={60}
+														height={60}
+														alt=""
+														className="avatar-small"
+													/>
+													<div className="memo-card-name">
+														<p className="p2 sans">{authorName}</p>
+														<div className="meta">{authorTitle}</div>
+													</div>
 												</div>
 											</div>
-										</div>
+											<ReadMoreCta />
+										</Link>
 									</div>
-									<ReadMoreCta />
-								</a>
-							</div>
+								);
+							})}
 						</div>
-						<a href="/memos" className="primary-button w-button">
+						<Link href="/memos" className="primary-button w-button">
 							See more memos
-						</a>
+						</Link>
 					</div>
 
 					{/* === Posts Section === */}
@@ -451,38 +435,23 @@ export default function Home() {
 							</p>
 						</div>
 						<div className="memo-grid" role="list">
-							<div className="memo-item" role="listitem">
-								<a href="/posts/budget-scorecards" className="memo-card">
-									<div className="card-text">
-										<div className="memo-details">
-											<h3>Budget Scorecards</h3>
-											<p>
-												How does the budget score on Build Canada memo ideas?
-											</p>
+							{postsResult.docs.map((post) => (
+								<div key={post.id} className="memo-item" role="listitem">
+									<Link href={`/posts/${post.slug}`} className="memo-card">
+										<div className="card-text">
+											<div className="memo-details">
+												<h3>{post.title}</h3>
+												<p>{(post.summary as string) || ""}</p>
+											</div>
 										</div>
-									</div>
-									<ReadMoreCta />
-								</a>
-							</div>
-							<div className="memo-item" role="listitem">
-								<a href="/posts/budget-2025" className="memo-card">
-									<div className="card-text">
-										<div className="memo-details">
-											<h3>Budget 2025</h3>
-											<p>
-												This budget is a step in the right direction towards
-												growth, but needs boldness and urgency to truly
-												deliver.
-											</p>
-										</div>
-									</div>
-									<ReadMoreCta />
-								</a>
-							</div>
+										<ReadMoreCta />
+									</Link>
+								</div>
+							))}
 						</div>
-						<a href="/projects" className="primary-button w-button">
+						<Link href="/projects" className="primary-button w-button">
 							See more posts
-						</a>
+						</Link>
 					</div>
 				</section>
 
