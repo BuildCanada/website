@@ -13,8 +13,6 @@ export default function ScrollAnimations() {
 	const hasRendered = useRef(false);
 
 	useEffect(() => {
-		// On first mount: animate everything (initial page load).
-		// On subsequent renders (client-side nav): skip sections already in viewport.
 		const isClientNav = hasRendered.current;
 		hasRendered.current = true;
 
@@ -25,13 +23,18 @@ export default function ScrollAnimations() {
 		const titleIntro = "<0.4";
 		const easy = "power3.out";
 
+		const allTargets = ".hero-title, .hero-paragraph, .hero-button-container, .get-involved-form, .get-involved-privacy-text, .spacer-image, .line-horizontal-top, .line-horizontal-bottom, .line-vertical-right, .line-vertical-right-2, .line-vertical-left, .line-vertical-left-3";
+
 		ctxRef.current = gsap.context(() => {
 			const sections = document.querySelectorAll(".section");
 
 			sections.forEach((section) => {
 				if (isClientNav) {
 					const rect = section.getBoundingClientRect();
-					if (rect.top < window.innerHeight * 0.6) return;
+					if (rect.top < window.innerHeight * 0.6) {
+						gsap.set(section.querySelectorAll(allTargets), { visibility: "visible", scaleX: 1, scaleY: 1, autoAlpha: 1 });
+						return;
+					}
 				}
 
 				const tl = gsap.timeline({
@@ -43,39 +46,45 @@ export default function ScrollAnimations() {
 					},
 				});
 
-				tl.from(
+				tl.fromTo(
 					section.querySelectorAll(".line-horizontal-top"),
-					{ scaleX: 0, backgroundColor: dark, duration: lineDuration, ease: easy },
+					{ scaleX: 0, visibility: "visible" },
+					{ scaleX: 1, backgroundColor: dark, duration: lineDuration, ease: easy },
 					lineIntro,
 				);
 
-				tl.from(
+				tl.fromTo(
 					section.querySelectorAll(".line-horizontal-bottom"),
-					{ scaleX: 0, backgroundColor: dark, duration: lineDuration, ease: easy },
+					{ scaleX: 0, visibility: "visible" },
+					{ scaleX: 1, backgroundColor: dark, duration: lineDuration, ease: easy },
 					lineIntro,
 				);
 
-				tl.from(
+				tl.fromTo(
 					section.querySelectorAll(".line-vertical-right-2"),
-					{ scaleY: 0, backgroundColor: dark, duration: 1, ease: easy },
+					{ scaleY: 0, visibility: "visible" },
+					{ scaleY: 1, backgroundColor: dark, duration: 1, ease: easy },
 					lineIntro,
 				);
 
-				tl.from(
+				tl.fromTo(
 					section.querySelectorAll(".line-vertical-left"),
-					{ scaleY: 0, backgroundColor: dark, duration: lineDuration, ease: easy },
+					{ scaleY: 0, visibility: "visible" },
+					{ scaleY: 1, backgroundColor: dark, duration: lineDuration, ease: easy },
 					lineIntro,
 				);
 
-				tl.from(
+				tl.fromTo(
 					section.querySelectorAll(".line-vertical-right"),
-					{ scaleY: 0, backgroundColor: dark, duration: 1, ease: easy },
+					{ scaleY: 0, visibility: "visible" },
+					{ scaleY: 1, backgroundColor: dark, duration: 1, ease: easy },
 					lineIntro,
 				);
 
-				tl.from(
+				tl.fromTo(
 					section.querySelectorAll(".line-vertical-left-3"),
-					{ scaleY: 0, backgroundColor: dark, duration: 1, ease: easy },
+					{ scaleY: 0, visibility: "visible" },
+					{ scaleY: 1, backgroundColor: dark, duration: 1, ease: easy },
 					lineIntro,
 				);
 
@@ -150,6 +159,12 @@ export default function ScrollAnimations() {
 			const skipFooter = isClientNav && footer &&
 				footer.getBoundingClientRect().top < window.innerHeight * 0.5;
 
+			const footerTargets = ".footer-title, .quote, .line-horizontal-top-footer, .line-horizontal-bottom-footer, .line-vertical-left-footer, .line-vertical-right-footer";
+
+			if (footer && skipFooter) {
+				gsap.set(footer.querySelectorAll(footerTargets), { visibility: "visible", scaleX: 1, scaleY: 1, autoAlpha: 1 });
+			}
+
 			if (footer && !skipFooter) {
 				const footerTl = gsap.timeline({
 					scrollTrigger: {
@@ -160,27 +175,31 @@ export default function ScrollAnimations() {
 					},
 				});
 
-				footerTl.from(
+				footerTl.fromTo(
 					".line-horizontal-top-footer",
-					{ scaleX: 0, backgroundColor: white, duration: lineDuration, ease: easy },
+					{ scaleX: 0, visibility: "visible" },
+					{ scaleX: 1, backgroundColor: white, duration: lineDuration, ease: easy },
 					"<-0.1",
 				);
 
-				footerTl.from(
+				footerTl.fromTo(
 					".line-horizontal-bottom-footer",
-					{ scaleX: 0, backgroundColor: white, duration: lineDuration, ease: easy },
+					{ scaleX: 0, visibility: "visible" },
+					{ scaleX: 1, backgroundColor: white, duration: lineDuration, ease: easy },
 					lineIntro,
 				);
 
-				footerTl.from(
+				footerTl.fromTo(
 					".line-vertical-left-footer",
-					{ scaleY: 0, backgroundColor: white, duration: lineDuration, ease: easy },
+					{ scaleY: 0, visibility: "visible" },
+					{ scaleY: 1, backgroundColor: white, duration: lineDuration, ease: easy },
 					lineIntro,
 				);
 
-				footerTl.from(
+				footerTl.fromTo(
 					".line-vertical-right-footer",
-					{ scaleY: 0, backgroundColor: white, duration: 1, ease: easy },
+					{ scaleY: 0, visibility: "visible" },
+					{ scaleY: 1, backgroundColor: white, duration: 1, ease: easy },
 					lineIntro,
 				);
 

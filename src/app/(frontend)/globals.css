@@ -896,6 +896,130 @@ input.w-button {
   text-align: left;
 }
 
+/* Elements animated by GSAP start hidden to prevent flash on load */
+.hero-title,
+.hero-paragraph,
+.hero-button-container,
+.get-involved-form,
+.get-involved-privacy-text,
+.spacer-image,
+.footer-title,
+.quote,
+.line-horizontal-top,
+.line-horizontal-bottom,
+.line-horizontal-top-footer,
+.line-horizontal-bottom-footer,
+.line-vertical-right,
+.line-vertical-right-2,
+.line-vertical-left,
+.line-vertical-left-3,
+.line-vertical-left-footer,
+.line-vertical-right-footer {
+  visibility: hidden;
+}
+
+/* === Memo Author Block === */
+.memo-author-block {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.author-social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 0.75rem;
+  margin-left: 80px;
+}
+.social-icon-link {
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+.social-icon-link:hover {
+  opacity: 1;
+}
+.supported-by {
+  margin-top: 1rem;
+}
+.supported-by .meta {
+  margin-bottom: 0.25rem;
+}
+.supporters-list {
+  display: inline;
+}
+.supporters-list p {
+  display: inline;
+  font-size: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
+}
+.supporters-list a {
+  font-size: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
+}
+
+/* === Memo Body Rich Text === */
+.memo-body,
+.memo-appendix {
+  margin: 2rem 0;
+  max-width: 800px;
+}
+.rich-text h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.rich-text h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.rich-text p {
+  margin-bottom: 1rem;
+  line-height: var(--line-height--p2);
+}
+.rich-text a {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  transition: opacity 0.2s ease;
+}
+.rich-text a:hover {
+  opacity: 0.7;
+}
+.rich-text a sup {
+  font-size: 0.7em;
+}
+.rich-text ol,
+.rich-text ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.rich-text li {
+  margin-bottom: 0.5rem;
+  line-height: var(--line-height--p2);
+  font-size: clamp(1.25rem, 1.071rem + 0.476vw, 1.5rem);
+}
+.rich-text blockquote {
+  border-left: 3px solid var(--accent);
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  font-style: italic;
+  font-size: clamp(1.5rem, 1.321rem + 0.476vw, 1.75rem);
+}
+.key-messages {
+  margin: 2rem 0;
+}
+.key-messages ul {
+  padding-left: 1.5rem;
+}
+.key-messages li {
+  margin-bottom: 0.75rem;
+  line-height: var(--line-height--p2);
+  font-size: clamp(1.25rem, 1.071rem + 0.476vw, 1.5rem);
+}
+
+/* === Twitter Embed === */
+.memo-twitter-embed {
+  margin: 2rem 0;
+  max-width: 550px;
+}
+
 /* === Newsletter CTA === */
 .memo-section {
   border: 1px none var(--border);
